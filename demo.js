@@ -17,6 +17,8 @@ angular.module("demo", ["ui.router","oc.lazyLoad"])
     })
     .controller("AppCtrl", function ($injector, $ocLazyLoad, $state) {
         var app = this;
+	//we can load it when controller is initialized
+	$state.go("/");
         app.click = function () {
 		$state.go("/");
             $ocLazyLoad.load({
