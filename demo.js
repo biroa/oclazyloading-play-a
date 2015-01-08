@@ -24,7 +24,7 @@ angular.module("demo", ["ui.router","oc.lazyLoad"])
             $ocLazyLoad.load({
                 name: "store",
                 files: [
-                    "store.js"
+                    "store.js","style.css"
                 ]
             }).then(function () {
                 console.log($injector.get("cart"));
